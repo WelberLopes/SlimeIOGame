@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=2]
+
+[ext_resource type="Texture" uid="uid://8fq5y2cqh2go" path="res://TBP_GrassPath2D/noise.png" id="1"]
+[ext_resource type="Shader" path="res://addons/TBP_GrassPath2D/blur.shader" id="2"]
+
+[resource]
+shader = ExtResource( 2 )
+shader_param/angle_degrees = 45.0
+shader_param/samples = 8
+shader_param/strength = 0.2234
+shader_param/noise = ExtResource( 1 )

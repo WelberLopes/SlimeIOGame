@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://wdd3l4yf0hwq"]
+
+[ext_resource type="Texture2D" uid="uid://btidsngj34g61" path="res://TBP_GrassPath2D/assets/grass19.png" id="1_40rw4"]
+[ext_resource type="Texture2D" uid="uid://d1e5kfg77dbmr" path="res://TBP_GrassPath2D/assets/grass17.png" id="2_b8s33"]
+[ext_resource type="Texture2D" uid="uid://cod3xabh5k4b2" path="res://TBP_GrassPath2D/assets/grass15.png" id="3_se26f"]
+[ext_resource type="Texture2D" uid="uid://wd8a8rkmsr3d" path="res://TBP_GrassPath2D/assets/grass14.png" id="4_4b7fg"]
+[ext_resource type="Texture2D" uid="uid://dmlrqh15eck61" path="res://TBP_GrassPath2D/assets/grass2.png" id="5_102u4"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+modulate = Color(0.224896, 0.58778, 0.195718, 1)
+
+[node name="Grass19" type="Sprite2D" parent="."]
+position = Vector2(-9, -22)
+texture = ExtResource("1_40rw4")
+
+[node name="Grass17" type="Sprite2D" parent="."]
+position = Vector2(5, -25)
+texture = ExtResource("2_b8s33")
+
+[node name="Grass15" type="Sprite2D" parent="."]
+position = Vector2(17, -30)
+texture = ExtResource("3_se26f")
+
+[node name="Grass14" type="Sprite2D" parent="."]
+position = Vector2(21, -31)
+texture = ExtResource("4_4b7fg")
+
+[node name="Grass18" type="Sprite2D" parent="."]
+position = Vector2(19, -40)
+texture = ExtResource("2_b8s33")
+
+[node name="Grass2" type="Sprite2D" parent="."]
+position = Vector2(27, -17)
+texture = ExtResource("5_102u4")

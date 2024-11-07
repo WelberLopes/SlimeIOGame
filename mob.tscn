@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://b2smxw1gj506l"]
+
+[ext_resource type="Script" path="res://mob.gd" id="1_54tmc"]
+[ext_resource type="PackedScene" uid="uid://ogik4s70pgwl" path="res://characters/slime/slime.tscn" id="2_bld3e"]
+[ext_resource type="Texture2D" uid="uid://cai2ijnbypqtr" path="res://characters/slime/slime_hurt_eyes.png" id="3_2l3bv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kla1v"]
+radius = 52.0096
+
+[node name="Mob" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_54tmc")
+
+[node name="Slime" parent="." instance=ExtResource("2_bld3e")]
+unique_name_in_owner = true
+position = Vector2(-1, 7)
+
+[node name="SlimeHurtEyes" type="Sprite2D" parent="Slime"]
+position = Vector2(1, -35)
+texture = ExtResource("3_2l3bv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -20)
+shape = SubResource("CircleShape2D_kla1v")
